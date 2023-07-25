@@ -1,0 +1,124 @@
+.resume {
+    height: 100%;
+}
+
+.timeline {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.resumeBtn {
+    cursor: pointer;
+    margin-top: 16px;
+    padding: 10px 70px;
+    font-size: 2rem;
+    background: #0ac94a;
+    color: #e70a0a;
+    border: 1.5px solid #000;
+    border-radius: 4px;
+    font-weight: bolder;
+
+}
+
+.resumeBtn:hover {
+    background: #e70a0a;
+    color: #0ac94a;
+}
+
+.timeline__experience,
+.timeline__education {
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.timeline__experience__header-text,
+.timeline__education__header-text {
+
+    display: inline-block;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+.timeline__experience__header-text::before,
+.timeline__experience__header-text::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+
+.timeline__experience__header-text::before {
+    left: 0;
+}
+
+.timeline__experience__header-text::after {
+    right: 0;
+}
+
+.timeline__experience__vertical-timeline-element {
+    padding: 0px 0px 30px 0px;
+}
+
+.timeline__experience__vertical-timeline-element:last-child {
+    padding-bottom: 0px;
+}
+
+.vertical-timeline-element-title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.item-title,
+.item-subtitle {
+    font-size: 16px;
+}
+
+.item-subtitle {
+    margin-left: 8px;
+}
+
+.vertical-timeline-element-title-wrapper-description {
+    font-size: 18px;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: none;
+}
+
+.vertical-timeline-element-content-arrow {
+    display: none;
+}
+
+.vertical-timeline-element-date {
+    opacity: 1;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .timeline {
+        flex-direction: column;
+
+    }
+
+    .timeline__experience,
+    .timeline__experience {
+        width: 100%;
+        gap: 2rem;
+    }
+}
