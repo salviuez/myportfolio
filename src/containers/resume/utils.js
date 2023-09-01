@@ -1,13 +1,6 @@
 export const data = {
     experience: [
-        {
-            title: "Trueleaf",
-            subTitle: "Batlagundu, Tamil Nadu",
-            description:
-                " HR Officer , From 05/Jan/2023 - Present",
 
-
-        },
         {
             title: "TVS Next",
             subTitle: "Chennai, Tamil Nadu",
@@ -40,12 +33,7 @@ export const data = {
             description:
                 "Bachelor of technology in computer science - 2016",
         },
-        {
-            title: "MBA",
-            subTitle: "Karunya School of Management",
-            description:
-                "Masters in HR and Marketing - 2018",
-        },
+
 
     ],
 };
